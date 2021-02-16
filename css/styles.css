@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root{
 	--pink: hsl(322, 100%, 66%);
@@ -23,13 +24,18 @@
 	position: relative;
 	font-family: 'Poppins', sans-serif;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	border: 1px solid black;
 	background-color: var(--pale-cyan);
 	background-image: url(../images/bg-hero-desktop.svg);
 	height: 718px;
 	width: 100%;
-	top: 0;
+}
+
+.header{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
 }
 
 .img-logo{
@@ -38,7 +44,7 @@
 }
 
 .img-logo img{
-	width: 75%;
+	width: 80%;
 }
 
 .btn-top{
@@ -59,3 +65,55 @@
 	box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
 	background-color: #fff;
 }
+
+.intro{
+	position: relative;
+	height: 75%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h1, h3{
+	margin-left: 4rem;
+	margin-top: 1.5rem;
+	color: var(--dark-cyan);
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.img-mockup{
+	position: relative;
+	width: 650px;
+	margin-top: 2.5rem;
+	margin-right: 4rem;
+}
+
+.img-mockup img{
+	width: 100%;
+	height: 100%;
+}
+
+.btn-intro{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--pale-cyan);
+	height: 45px;
+	width: 260px;
+	outline: 0;
+	margin-left: 4rem;
+	margin-top: 1.5rem;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+	background-color: var(--pink);
+}
+
